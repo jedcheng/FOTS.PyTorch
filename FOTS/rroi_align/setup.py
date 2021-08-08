@@ -2,9 +2,9 @@ from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
 setup(
-    name='rroi_align',
+    name='rotate_roi',
     ext_modules=[
-        CUDAExtension('rroi_align', [
+        CUDAExtension('rotate_roi', [
             'src/rroi_align_cuda.cpp',
             'src/rroi_align_kernel.cu',
         ])
